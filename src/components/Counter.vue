@@ -1,27 +1,19 @@
 <template>
   <div>
     <p>counter</p>
-    <input 
-      @click="coutnUp()"
-      type="button"
-      value="+1"
-    />
-    <p>{{count}}</p>
+    <btn />
+    <lbl />
   </div>
 </template>
 
 <script>
+import Btn from './Btn';
+import Lbl from './Lbl';
 
 export default {
-  data() {
-    return {
-      count: 0
-    }
-  },
-  methods: {
-    coutnUp() {
-      this.count++;
-    }
+  components: {
+    Btn,
+    Lbl 
   }
 }
 </script>
